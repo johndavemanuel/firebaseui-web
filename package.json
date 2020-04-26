@@ -18,6 +18,7 @@
   "types": "./dist/index.d.ts",
   "style": "dist/firebaseui.css",
   "scripts": {
+    "demo-win10": "npm run build && cp -r dist demo/public && cd demo && firebase serve",
     "build": "gulp",
     "build-all": "gulp build-all",
     "build-soy": "gulp build-soy",
